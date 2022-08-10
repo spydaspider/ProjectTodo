@@ -1,0 +1,141 @@
+/* core styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+  background: rgb(236 234 234);
+}
+
+.list-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  background: rgb(236 234 234);
+}
+
+.list-wrapper {
+  grid-column: 3/11;
+  grid-row: 2 / span 8;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  box-shadow: 10px 10px 8px 6px #b1acac;
+}
+
+.top-section {
+  margin-top: 0;
+  grid-column: 1/13;
+  display: grid;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 200;
+  grid-column: 1/11;
+  padding: 0.5em 0;
+  margin-top: 20px;
+  background: #fff;
+  padding-left: 1em;
+}
+
+.arrows {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1/13;
+  background: #fff;
+}
+
+.refresh-icon {
+  grid-column: 12/13;
+  margin-top: 1.2em;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+input {
+  margin-top: 0.2em;
+  grid-column: 1/12;
+  padding: 1em;
+  border: none;
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(151 148 148);
+}
+
+.lists {
+  grid-column: 1/13;
+}
+
+.todolists {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: #fff;
+  margin-top: 0.2em;
+}
+
+.todolists i {
+  margin-top: 0.5em;
+  cursor: pointer;
+  padding-left: 0.3em;
+  font-size: 30px;
+}
+
+.input-check {
+  grid-column: 1/2;
+  width: 18px;
+  margin-top: 0.2em;
+  cursor: pointer;
+  margin-left: 20%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.text-field {
+  margin-top: 0.2em;
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: #fff;
+}
+
+.check {
+  grid-column: 2/12;
+  font-size: 20px;
+  padding: 1em 0;
+}
+
+.anchor-icon {
+  grid-column: 12/13;
+  background: #fff;
+  margin-top: 1.5em;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.clear {
+  grid-column: 1/13;
+}
+
+button {
+  width: 100%;
+  font-size: 18px;
+  padding: 1.3em 0;
+  background: rgb(236 233 233);
+  border: none;
+  color: rgb(126 124 124);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .list-wrapper {
+    grid-column: 2/12;
+    grid-row: 2 / span 8;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
